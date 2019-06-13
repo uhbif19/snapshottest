@@ -17,7 +17,7 @@ def reporting_lines(testing_cli):
             colored('{} snapshots written', 'green', attrs=bold) + ' in {} test suites.'
         ).format(*new_snapshots)
     inspect_str = colored(
-        'Inspect your code or run with `{} --snapshot-update` to update them.'.format(testing_cli),
+        'Inspect your code or run with `{} with less restrictive `--snapshot-record-mode` to update them.'.format(testing_cli),
         attrs=['dark']
     )
     failed_snapshots = SnapshotModule.stats_failed_snapshots()
